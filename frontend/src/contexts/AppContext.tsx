@@ -26,6 +26,9 @@ export const AppContextProvider = ({
     apiClient.validateToken,
     {
       retry: false,
+      refetchOnMount: false,
+      refetchOnWindowFocus: false,
+      refetchOnReconnect: false,
     }
   );
 
